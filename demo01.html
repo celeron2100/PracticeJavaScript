@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript練習</title>
+        <script>
+            function scoreCalculate() {
+                var score = document.getElementById("scores").value;
+                var result = document.getElementById("result");
+                if (score > 80) {
+                    result.innerHTML = "Excellent!";
+                } else if (score > 60) {
+                    result.innerHTML = "Nice!";
+                } else {
+                    result.innerHTML = "Need hard working!";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label for="scorecalculate">輸入分數:</label>
+        <input type="text" id="scores">
+        <input type="button" id="calculate" value="計算" onclick="scoreCalculate()">
+        <p id="result"></p>
+    </body>
+</html>
