@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Max Value and Min Value</title>
+<meta charset="utf-8">
+</head>
+<pre>
+<script>
+
+document.writeln("-Number.MAX_VALUE is "+ -Number.MAX_VALUE);
+document.writeln("-Number.MIN_VALUE is " + -Number.MIN_VALUE);
+document.writeln("Number.MAX_VALUE is " + Number.MAX_VALUE);
+document.writeln("Number.MIN_VALUE is " + Number.MIN_VALUE);
+document.writeln("0 / 0 is " + 0 / 0);
+document.writeln("Infinity * Infinity is " + (Infinity * Infinity));
+document.writeln("Infinity - Infinity is " + (Infinity - Infinity));
+document.writeln("NaN + 16 is " + (NaN + 16));
+document.writeln("NaN === NaN is " + (NaN === NaN));
+document.writeln("-2 === Math.sqrt(-2 * -2) is " +(-2 === Math.sqrt(-2 * -2)));
+document.writeln("-2 == Math.sqrt(-2 * -2) is " +(-2 == Math.sqrt(-2 * -2)));
+document.writeln("2 === Math.sqrt(-2 * -2) is " +(2 === Math.sqrt(-2 * -2)));
+document.writeln("2 == Math.sqrt(-2 * -2) is " +(2 == Math.sqrt(-2 * -2)));
+document.writeln("isNaN(Math.sqrt(-1)) is " + isNaN(Math.sqrt(-1)));
+</script>
+</pre>
+<body>
+<div><input type="button" value="Roll" id="roller"/></div>
+<div id="die"></div>
+<pre>
+<script>
+document.getElementById("roller").onclick = function(){
+document.getElementById("die").innerHTML = "&#x268" + Math.floor(Math.random() * 6) + ";"}
+</script>
+</pre>
+</body>
+</html>
